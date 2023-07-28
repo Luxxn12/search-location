@@ -11,13 +11,13 @@ function CategoryList() {
 
   return (
     <div>
-      <h2 className="Text-[20px] mt-3 font-bold mb-3">
+      <h2 className="text-[17px] mt-5 font-bold mb-3">
         Select Your Fav Category
       </h2>
       {category ? (
         <div className="flex gap-6 mb-5">
-          {category?.map((item) => (
-            <div key={item}>
+          {category?.map((item, index) => (
+            <div key={index}>
               <CategoryItem category={item} />
             </div>
           ))}
